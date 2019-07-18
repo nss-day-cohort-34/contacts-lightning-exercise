@@ -1,0 +1,60 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.list--contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact {
+    flex-basis: 25%;
+    padding: 1em 2em 3em 2em;
+    border: 2px dotted darkolivegreen;
+    margin: 15px 5px;
+}
+
+.contact:hover {
+    animation: jiggle 0.2s;
+    transition: .4s all ease;
+    z-index: 11;
+    box-shadow: 5px 15px 20px rgba(72, 62, 23, 0.4);
+    border: 3px solid orangered;
+}
+
+.contact__name {
+    font-size: 1.5em;
+}
+
+.contact__title {
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    33% {
+        transform: rotate(1deg) scale(1.0);
+        opacity: 0.75;
+    }
+    66% {
+        transform: rotate(-1deg) scale(1.0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
